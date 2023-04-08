@@ -9,7 +9,7 @@
 	"repository": {
 		"jsdocbody": {
 			"begin": "(?<=/\\*\\*)([^*]|\\*(?!/))*$",
-			"while": "(^|\\G)\\s*\\*(?!/)(?=([^*]|[*](?!/))*$)",
+			"while": "(^|\\G)(?=([^*]|[*](?!/))*$)",
 			"patterns": [
 				{
 					"include": "text.html.markdown#fenced_code_block_js"

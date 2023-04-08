@@ -8,7 +8,7 @@
     "repository": {
         "jsdocbody": {
             "begin": "(?<=/\\*\\*)([^*]|\\*(?!/))*$",
-            "while": "(^|\\G)\\s*\\*(?!/)(?=([^*]|[*](?!/))*$)",
+            "while": "(^|\\G)(?=([^*]|[*](?!/))*$)",
             "patterns": [
                 {
                     "include": "text.html.markdown#fenced_code_block_js"
@@ -32,7 +32,7 @@
         },
         "example": {
             "begin": "((@)example)\\s+(?=([^*]|[*](?!/))*$).*$",
-            "while": "(^|\\G)\\s(?!@)(?=([^*]|[*](?!/))*$)",
+            "while": "(^|\\G)(?!@)(?=([^*]|[*](?!/))*$)",
             "beginCaptures": {
                 "1": {
                     "name": "storage.type.class.jsdoc"
